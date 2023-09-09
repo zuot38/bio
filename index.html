@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktivní boxy</title>
+</head>
+
+<body>
+
+    <!-- Textové pole pro zadávání textu -->
+    <textarea id="inputBox" placeholder="Napište sem..." rows="4" cols="50"></textarea>
+
+    <button onclick="transferText()">Přenes text</button>
+
+    <!-- Textové pole pro zobrazení výsledku -->
+    <textarea id="outputBox" placeholder="Zde se objeví váš text..." rows="4" cols="50" readonly></textarea>
+
+    <script>
+        // Funkce pro přenesení textu z jednoho pole do druhého
+        function transferText() {
+            const inputBox = document.getElementById('inputBox');
+            const outputBox = document.getElementById('outputBox');
+            outputBox.value = inputBox.value;
+        }
+    </script>
+
+</body>
+
+</html>
