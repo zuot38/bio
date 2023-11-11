@@ -1,15 +1,3 @@
-        function isMobileDevice() {
-            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        }
-
-        function redirectToMobileSite() {
-            window.location.href = "https://m.zuot.cc/";
-        }
-
-        if (isMobileDevice()) {
-            redirectToMobileSite();
-		
-        }
 	function typeText(element, text, speed) {
         let index = 0;
         const timer = setInterval(function() {
